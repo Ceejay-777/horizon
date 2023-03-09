@@ -68,7 +68,8 @@
 }
 
 .intro {
-    border: 2px solid yellow;
+    border: 2px solid yellow; 
+    min-width: 500px;
 }
 
 .intro > h1{
@@ -95,7 +96,7 @@
     box-sizing: content-box;
     background-color: #132A13;
     color: var(--green-five);
-    margin: 20px 0;
+    margin: 30px 0;
 }
 
 .phone-image-container {
