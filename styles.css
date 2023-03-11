@@ -17,11 +17,22 @@
     display: flex;
 }
 
+.container {
+    width: 80%;
+}
+
+.wrapper {
+    border-radius: 30px;
+    box-shadow: -0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
 .section-one {
     padding-top: 20px;
     /* background-color: #ecf39e;
     background-image: url("data:image/svg+xml,%3Csvg width='64' height='64' viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 16c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zm33.414-6l5.95-5.95L45.95.636 40 6.586 34.05.636 32.636 2.05 38.586 8l-5.95 5.95 1.414 1.414L40 9.414l5.95 5.95 1.414-1.414L41.414 8zM40 48c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zM9.414 40l5.95-5.95-1.414-1.414L8 38.586l-5.95-5.95L.636 34.05 6.586 40l-5.95 5.95 1.414 1.414L8 41.414l5.95 5.95 1.414-1.414L9.414 40z' fill='%2390a955' fill-opacity='0.18' fill-rule='evenodd'/%3E%3C/svg%3E"); */
     min-width: min-content;
+    border-bottom: 1px solid black;
+    background-color: #ECF39E;
 }
 
 .main-nav {
@@ -82,7 +93,7 @@
     color: var(--green-one);
     font-family: var(--Monty);
     text-transform: capitalize;
-    font-size: 2.5rem;
+    font-size: 2.7rem;
     margin-bottom: 20px;
 }
 
@@ -94,6 +105,7 @@
     font-family: var(--Monty);
     font-size: 14px;
     margin-bottom: 20px;
+    font-weight: 500;
 }
 
 .intro > svg {
@@ -114,16 +126,34 @@
 }
 
 .phone-image-wrapper {
-    /* border: 1px solid red; */
     width: 100%;
-    /* height: calc(min-content + 100px); */
     justify-content: center;
     align-items: center;
-    border-radius: 30px;
-    box-shadow: -0px 0px 10px 0px rgba(0, 0, 0, 0.2);
 }
 
 .phone-image{
     max-width: 100%;
     /* background: pink; */
+}
+
+.section-one {
+    display: none;
+}
+
+.section-two {
+    margin: 20px auto;
+    border: 1px solid black;
+}
+
+.specs {
+    width: 60%;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.section-two .wrapper {
+    padding: 20px;
+}
+.section-two svg {
+    width: 25px;
 }
