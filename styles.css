@@ -26,6 +26,23 @@
     box-shadow: -0px 0px 10px 0px rgba(0, 0, 0, 0.2);
 }
 
+.btn {
+    color: var(--green-five);
+    font-weight: 600;
+    text-decoration: none;
+    padding: 0.5em;
+    border-radius: 30px;
+    background-color: var(--green-two);
+}
+
+.light {
+    color: var(--green-four);
+}
+
+.dark {
+    color: var(--green-one);
+}
+
 .hidden {
     display: none
 }
@@ -103,10 +120,6 @@
     margin-bottom: 20px;
 }
 
-.intro .light {
-    color: var(--green-four);
-}
-
 .intro > p {
     font-family: var(--Monty);
     font-size: 14px;
@@ -147,16 +160,17 @@
 } */
 
 .section-two {
-    margin: 20px auto;
+    width: 90%;
+    margin: 40px auto;
     /* border: 1px solid black; */
     font-family: var(--Monty);
+    justify-content: space-between;
 }
 
 .specs {
-    width: 60%;
+    width: 55%;
     /* min-width: 305px; */
     flex-wrap: wrap;
-    /* border: 1px solid red; */
     gap: 10%;
     padding: 0 auto;
 }
@@ -177,9 +191,35 @@
 .section-two svg {
     color: var(--green-three);
     width: 30px;
+
 }
 
 .specs p {
     font-size: 0.7rem;
     min-width: 100px;
+}
+
+.specs-text {
+    width: 35%;
+    justify-content: space-around;
+    flex-direction: column;
+    height: fit-content;
+    align-self: center;
+}
+
+.specs-text h2 {
+    font-size: 2.3rem;
+    text-transform: capitalize;
+    margin-bottom: 40px;
+}
+
+.specs-text p {
+    margin-bottom: 40px;
+}
+
+.specs-text a {
+    width: 70%;
+    max-width: 200px;
+    display: inline-block;
+    text-align: center;
 }
