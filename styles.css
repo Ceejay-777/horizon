@@ -285,7 +285,7 @@ img {
 
 .products {
     /* border: 1px solid red; */
-    grid-auto-flow: column;
+    /* grid-auto-flow: column; */
     gap: 20px;
     overflow-x: auto;
     scroll-snap-type: inline mandatory;
