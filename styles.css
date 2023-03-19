@@ -284,26 +284,45 @@ img {
 }
 
 .section-four-top {
-    grid-template-columns: auto auto;
-    grid-template-areas: 
-        "text scroller";
+    grid-template-columns: 40% auto;
+    grid-template-rows: 1fr;
+    /* grid-template-areas: 
+        "text scroller"; */
     gap: 5%;
 }
 
 .section-four-top-text {
-    grid-area: text;
+    /* grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    z-index: 3;
+    background: #fff;
+    height: 90%; */
+    padding: 20px;
+    align-self: center;
+    justify-self: center;
 }
 
+.section-four-top-text > h2 {
+    margin-bottom: 30px;
+}
+
+.section-four-top-text > p {
+    max-width: 350px;
+}
 .products {
     padding: 20px;
-    /* border: 1px solid red; */
     grid-auto-flow: column;
     gap: 20px;
     overflow-x: auto;
     scroll-snap-type: inline mandatory;
-    grid-area: scroller;
     overscroll-behavior-inline: contain;
-    scroll-padding-inline: 20px;
+    scroll-padding-inline-start: 20px;
+    /* grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 3; */
 }
 
 .products::-webkit-scrollbar {
@@ -313,17 +332,17 @@ img {
 .products::-webkit-scrollbar-track {
     background-color: var(--green-four);
     border-radius: 100vw;
-    margin-inline: 5px;
+    margin-inline: 10px;
 }
+
 .products::-webkit-scrollbar-thumb {
     border: 1px solid var(--green-four);
     background-color: var(--green-two);
     border-radius: 100vw;
-
 }
 
 .product {
-    min-width: 200px;
+    min-width: 300px;
     aspect-ratio: 1 / 1;
     scroll-snap-align: start;
     box-shadow: none;
