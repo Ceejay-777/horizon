@@ -284,21 +284,14 @@ img {
 }
 
 .section-four-top {
+    margin-top: 40px;
     grid-template-columns: 40% auto;
-    grid-template-rows: 1fr;
     /* grid-template-areas: 
         "text scroller"; */
     gap: 5%;
 }
 
 .section-four-top-text {
-    /* grid-row-start: 1;
-    grid-row-end: 2;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    z-index: 3;
-    background: #fff;
-    height: 90%; */
     padding: 20px;
     align-self: center;
     justify-self: center;
@@ -319,10 +312,8 @@ img {
     scroll-snap-type: inline mandatory;
     overscroll-behavior-inline: contain;
     scroll-padding-inline-start: 20px;
-    /* grid-row-start: 1;
-    grid-row-end: 2;
-    grid-column-start: 1;
-    grid-column-end: 3; */
+    scrollbar-color: var(--green-four) var(--green-two);
+    scrollbar-width: thin;
 }
 
 .products::-webkit-scrollbar {
@@ -344,13 +335,33 @@ img {
 .product {
     min-width: 300px;
     aspect-ratio: 1 / 1;
-    scroll-snap-align: start;
+    scroll-snap-align: center;
     box-shadow: none;
-    background: linear-gradient(225deg, var(--green-five), var(--green-four))
+    background: linear-gradient(225deg, var(--green-five), var(--green-four));
+    padding: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.product:hover {
+    transform: scale(1.07);
 }
 
 .round-image-container {
-    width: 50%;
+    width: 40%;
+    aspect-ratio: 1 / 1;
+    margin: 10% auto;
+    background-image: url(images/phone_2.png);
+    border: 2px solid white;
+    border-radius: 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.product-text {
+    color: white;
+    font-size: 12px;
+    text-align: center;
 }
 
 footer {
@@ -358,5 +369,4 @@ footer {
     height: 150px;
     border-top-left-radius: 80px;
     border-top-right-radius: 80px;
-    margin-top: 400px;
 }
