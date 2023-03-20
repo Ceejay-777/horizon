@@ -15,7 +15,7 @@
 
 body {
     font-family: var(--Monty);
-    max-width: 880px;
+    max-width: 850px;
     margin: 0 auto;
 }
 
@@ -234,7 +234,8 @@ img {
 }
 
 .section-three-container {
-    justify-content: space-around;
+    justify-content: space-between;
+    width: 95%;
 }
 
 .section-three-image-container {
@@ -413,7 +414,7 @@ footer {
     color: var(--green-one);
 }
 
-@media (max-width: 880px) {
+@media (max-width: 879px) {
     .intro-container {
         flex-direction: column;
         justify-content: center;
@@ -432,5 +433,10 @@ footer {
         animation-duration: 2s;
         animation-iteration-count: infinite;
         /* border: 1px solid black; */
+    }
+
+    .section-three-sec-text {
+        grid-column: span 2;
+        
     }
 }
