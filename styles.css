@@ -184,7 +184,7 @@ img {
     padding: 20px;
     aspect-ratio: 1 / 1;
     width: 45%;
-    min-width: 120px;
+    min-width: 140px;
     max-width: 160px;
     margin-bottom: 10%;
     justify-content: space-around;
@@ -234,7 +234,7 @@ img {
 }
 
 .section-three-container {
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .section-three-image-container {
@@ -385,12 +385,28 @@ footer {
 
 .section-four-bottom-text{
     justify-self: center;
+    color: black;
 }
 
 .section-four-bottom-texts h2 {
     font-size: 18px;
+    margin-bottom: 20px;
 }
 
 .section-four-bottom-texts p {
-    font-size: 14px;
+    font-size: 12px;
+}
+
+.footer-logo {
+    margin-bottom: 20px;
+}
+
+.footer-logo p{
+    color: white;
+    font-size: 1.5rem;
+    
+}
+
+.footer-logo svg {
+    color: var(--green-one);
 }
