@@ -15,7 +15,7 @@
 
 body {
     font-family: var(--Monty);
-    max-width: 1500px;
+    max-width: 880px;
     margin: 0 auto;
 }
 
@@ -385,16 +385,18 @@ footer {
 
 .section-four-bottom-text{
     justify-self: center;
-    color: black;
 }
 
 .section-four-bottom-texts h2 {
     font-size: 18px;
     margin-bottom: 20px;
+    color: white;
+
 }
 
 .section-four-bottom-texts p {
     font-size: 12px;
+    color: var(--green-one);
 }
 
 .footer-logo {
@@ -409,4 +411,26 @@ footer {
 
 .footer-logo svg {
     color: var(--green-one);
+}
+
+@media (max-width: 880px) {
+    .intro-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    @keyframes enlarge {
+        0% {transform: scale(1)}
+        50% {transform: scale(1.1)}
+        100% {transform: scale(1)}
+    }
+
+    .phone-image-wrapper  {
+        animation-name: enlarge;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        /* border: 1px solid black; */
+    }
 }
