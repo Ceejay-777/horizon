@@ -15,6 +15,8 @@
 
 body {
     font-family: var(--Monty);
+    max-width: 1500px;
+    margin: 0 auto;
 }
 
 img {
@@ -59,9 +61,9 @@ img {
     color: var(--green-one);
 }
 
-.hidden {
+/* .hidden {
     display: none
-}
+} */
 
 .section-one {
     padding-top: 20px;
@@ -127,7 +129,7 @@ img {
 }
 
 .intro > p {
-    font-size: 14px;
+    font-size: 1rem;
     margin-bottom: 20px;
     font-weight: 500;
 }
@@ -197,7 +199,7 @@ img {
 }
 
 .specs p {
-    font-size: 0.7rem;
+    font-size: 1rem;
     min-width: 100px;
 }
 
@@ -217,6 +219,7 @@ img {
 
 .specs-text p {
     margin-bottom: 40px;
+    font-size: 1rem;
 }
 
 .specs-text a {
@@ -242,10 +245,9 @@ img {
 
 .section-three-text {
     width: 60%;
-    /* border: 1px solid red; */
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 2rem;
+    gap: 1rem;
     padding: 20px 0;
 }
 
@@ -267,9 +269,8 @@ img {
 }
 
 .section-three-sec-text p {
-    width: 80%;
     max-width: 300px;
-    font-size: 12px;
+    font-size: 14px;
     grid-column: 2;
 }  
 
@@ -283,12 +284,15 @@ img {
     font-size: 2rem;
 }
 
+.section-four {
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 100%;
+}
+
 .section-four-top {
     margin-top: 40px;
     grid-template-columns: 40% auto;
-    /* grid-template-areas: 
-        "text scroller"; */
-    gap: 5%;
+    margin-bottom: 80px;
 }
 
 .section-four-top-text {
@@ -366,7 +370,27 @@ img {
 
 footer {
     background-color: var(--green-four);
-    height: 150px;
     border-top-left-radius: 80px;
     border-top-right-radius: 80px;
+    color: white;
+    padding: 3rem;
+    font-size: 14px;
+}
+
+.section-four-bottom-texts {
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    gap: 20px;
+}
+
+.section-four-bottom-text{
+    justify-self: center;
+}
+
+.section-four-bottom-texts h2 {
+    font-size: 18px;
+}
+
+.section-four-bottom-texts p {
+    font-size: 14px;
 }
