@@ -15,7 +15,7 @@
 
 body {
     font-family: var(--Monty);
-    max-width: 850px;
+    max-width: 1500px;
     margin: 0 auto;
 }
 
@@ -107,6 +107,28 @@ img {
     color:black;
     text-decoration: none;
     margin: 0 10px;
+}
+
+.hamburger {
+    margin-right: 30px;
+    border-radius: 50%;
+    padding: 5px;
+    display: none;
+}
+
+.hamburger:hover {
+    background-color: var(--green-two);
+    opacity: 0.8;
+}
+
+.hamburger  > svg{
+    display: block;
+    color: black;
+    width: 1.5rem;   
+}
+
+.hamburger>svg:hover {
+    color: var(--green-five);
 }
 
 .intro-container {
@@ -250,7 +272,9 @@ img {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
-    padding: 20px 0;
+    padding: 20px 0px;
+    padding-left: 5%;
+
 }
 
 .section-three-svg {
@@ -415,7 +439,7 @@ footer {
     color: var(--green-one);
 }
 
-@media (max-width: 879px) {
+@media (max-width: 880px) {
     .intro-container {
         flex-direction: column;
         justify-content: center;
@@ -439,5 +463,15 @@ footer {
     .section-three-sec-text {
         grid-column: span 2;
         
+    }
+}
+
+@media (max-width: 680px) {
+    .nav-items {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
     }
 }
