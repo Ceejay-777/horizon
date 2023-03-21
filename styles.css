@@ -236,10 +236,11 @@ img {
 .section-three-container {
     justify-content: space-between;
     width: 95%;
+    margin: 0 auto;
 }
 
 .section-three-image-container {
-    width: 30%;
+    width: 35%;
     /* border: 1px solid black; */
     align-items: center;
 }
