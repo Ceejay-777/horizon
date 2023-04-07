@@ -336,6 +336,7 @@ img {
 .section-four-top-text > p {
     max-width: 350px;
 }
+
 .products {
     padding: 20px;
     grid-auto-flow: column;
@@ -486,6 +487,20 @@ footer {
 
     .specs-text {
         width: 80%;
+    }
+
+    .specs {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+        width: 90%;
+        gap: 25px;
+        margin: 0 auto;
+        scroll-snap-type: inline mandatory;
+        overscroll-behavior-inline: contain;
+        scroll-padding-inline-start: 20px;
+        scrollbar-color: var(--green-four) var(--green-two);
+        scrollbar-width: thin;
     }
 
     .section-four-bottom-texts {
