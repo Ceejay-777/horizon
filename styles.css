@@ -27,6 +27,7 @@ body {
 
 img {
     max-width: 100%;
+    max-height: 100%;
 }
 
 .flex {
@@ -458,7 +459,17 @@ footer {
     }
 
     .section-three-container {
-        grid-auto-flow: column;
+        grid-template-columns: 95%;
+        margin: 0px auto;
+        padding-top: 40px;
+        animation-name: enlarge;
+        /* grid-template-rows: auto auto; */
+    }
+
+    .section-three-image-container {
+        width: 30%;
+        min-width: 160px;
+        justify-self: center;
     }
 
     /* .section-three-text {
