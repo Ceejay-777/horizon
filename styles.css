@@ -263,7 +263,7 @@ img {
 
 .section-three-container {
     grid-template-columns: 35% 60%;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     width: 95%;
     margin: 0 auto;
 }
@@ -458,16 +458,12 @@ footer {
     }
 
     .section-three-container {
-        grid-template-areas: 
-            "sec-three-text sec-three-text"
-            "image sec-three-text"
-            "sec-three-text sec-three-text"
-        ;
+        grid-auto-flow: column;
     }
 
-    .section-three-text {
+    /* .section-three-text {
         grid-area: sec-three-text;
-    }
+    } */
 
     /* .section-three-pri-text {
         grid-area: pri-text;
@@ -493,9 +489,9 @@ footer {
         grid-area: sec-text-four;
     } */
 
-    .section-three-image-container {
+    /* .section-three-image-container {
         grid-area: image;
-    }
+    } */
 
     /* .section-three-container {
         grid-template-columns: 45% 50%;
