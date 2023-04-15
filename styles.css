@@ -21,9 +21,8 @@ body {
     font-family: var(--Monty);
     width: 100%;
     max-width: 1400px;
-    min-width: 100%;
+    min-width: 400px;
     margin: 0px auto;
-    border: 1px solid black;
 }
 
 img {
@@ -483,7 +482,7 @@ footer {
     }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 720px) {
     .nav-items {
         display: none;
     }
@@ -491,7 +490,9 @@ footer {
     .hamburger {
         display: block;
     }
+}
 
+@media (max-width: 640px) {
     .section-two {
         flex-direction: column-reverse;
         gap: 40px;
@@ -507,9 +508,12 @@ footer {
 
     .specs {
         width: 80%;
-        /* min-width: 340px; */
         gap: 20px;
         margin: 0 auto;
+    }
+
+    .section-four-bottom-texts {
+        grid-template-rows: 1fr 1fr;
     }
 }
 
@@ -529,5 +533,4 @@ footer {
     .product {
         min-width: 200px;
     }
-
 }
