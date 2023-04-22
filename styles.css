@@ -104,11 +104,8 @@ img {
     color: var(--green-four);
 }
 
-.nav-item {
+.nav-item, .mobile-nav-item  {
     font-weight: 400;
-}
-
-.nav-item, .mobile-nav-item {
     list-style: none;
 }
 
@@ -142,12 +139,19 @@ img {
 }
 
 .nav-mobile {
+    z-index: 3;
     position: fixed;
-    background-color: yellow;
+    background-color: white;
     right: 0px;
     top: 0px;
     width: 40%;
     height: 100%;
+    padding: 100px 0px;
+}
+
+.mobile-nav-items {
+    flex-direction: column;
+    gap: 40px;
 }
 
 .intro-container {
