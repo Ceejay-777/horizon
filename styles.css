@@ -150,13 +150,29 @@ img {
     top: 0px;
     width: 40%;
     height: 100%;
-    padding: 100px 0px;
+    padding: 20px;
+    transition: transform ease-in 0.3s;
 }
 
 .mobile-nav-items {
     flex-direction: column;
     gap: 40px;
+    padding: 80px 0px;
 }
+
+.mobile-cancle {
+    width: 40px;
+    float: right;
+}
+
+.disappear {
+    transform: translateX(calc(100%));
+}
+
+/* .appear {
+    display: block;
+    transform: translateX(calc(-100%));
+} */
 
 .intro-container {
     /* width: 80%; */
