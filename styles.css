@@ -42,6 +42,10 @@ img {
     display: grid;
 }
 
+.block {
+    display: block;
+}
+
 .container {
     width: 80%;
     max-width: 1100px;
